@@ -9,13 +9,17 @@ interface CryptoTableProps {
 
 const CryptoTable: React.FC<CryptoTableProps> = ({ cryptos }) => {
   return (
-    <table>
+    <table className="table">
       <thead>
-        <tr>
+        <tr className="table-header">
+          <th>Icon</th>
           <th>Name</th>
           <th>Market Cap</th>
           <th>Price</th>
           <th>rank</th>
+          <th>Circulating Supply</th>
+          <th>Max Supply</th>
+          <th>Change 24h</th>
           <th>Details</th>
         </tr>
       </thead>
